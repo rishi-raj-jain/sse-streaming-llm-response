@@ -1,3 +1,4 @@
+import cache from '@/app/lib/upstashCache';
 import { ChatOpenAI } from "@langchain/openai";
 
 export type ConversationMessage = {
@@ -12,12 +13,13 @@ export const chatCompletionModel = (
   encoder: TextEncoder
 ) =>
   new ChatOpenAI({
+    cache,
     streaming: true,
     temperature: 0.9,
     callbacks: [
       {
         handleLLMNewToken(token) {
-          controller.enqueue(encoder.encode(`data: ${token}\n\n`));
+          controller.enqueue(encoder.encode(token));
         },
         async handleLLMEnd(output) {
           console.log(output.generations[0][0].text);
