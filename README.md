@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![](https://upstash.com/blog/sse-streaming-llm-responses/opengraph-image)
 
-## Getting Started
+# Using Server-Sent Events (SSE) to stream LLM responses in Next.js
 
-First, run the development server:
+<p>
+  <a href="#introduction"><strong>Introduction</strong></a> ·
+  <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
+  <a href="#author"><strong>Author</strong></a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Introduction
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Learn how to build use Server-Sent Events (SSE) to stream LLM responses in Next.js with OpenAI.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack + Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Frameworks
 
-## Learn More
+- [Next.js](https://nextjs.oth) – The React Framework for the Web.
 
-To learn more about Next.js, take a look at the following resources:
+- [Vercel AI SDK](https://sdk.vercel.ai/docs) – An open source library for building AI-powered user interfaces.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Database
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Upstash](https://upstash.com) - Serverless database platform. We're going to use Upstash Redis to cache OpenAI API responses.
 
-## Deploy on Vercel
+### Artificial Intelligence
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [OpenAI](https://openai.com) - OpenAI is an artificial intelligence research lab focused on developing advanced AI technologies.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [LangChain](https://js.langchain.com) - Framework for developing applications powered by language models.
+
+### UI
+
+- [TailwindCSS](https://tailwindcss.com) – A CSS framework for rapid and responsive styling.
+
+### Platofrms
+
+- [Vercel](https://www.vercel.com) - A cloud platform for deploying and scaling web applications.
+
+## Author
+
+- Rishi Raj Jain ([@rishi_raj_jain_](https://twitter.com/rishi_raj_jain_))
